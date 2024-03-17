@@ -1,0 +1,24 @@
+
+        /* Custom CSS */
+        .jumbotron {
+            text-align: center;
+            background-color: #e9ecef; /* Light gray background */
+            padding: 10px 0; /* Add padding to top and bottom */
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem; /* Larger font size for heading */
+            color: #343a40; /* Dark text color */
+        }
+        .jumbotron h3 {
+            color: #6c757d; /* Lighter text color */
+        }
+
+
+
+
+/* .jumbotron{
+    padding: 2rem 1rem;
+    background-color: #e9ecef;
+    text-align: center;
+} */
