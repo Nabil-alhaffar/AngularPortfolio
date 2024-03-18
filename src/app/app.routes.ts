@@ -3,6 +3,13 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import {ModalModule} from 'ngx-bootstrap/modal'
+import { NgModule, RendererFactory2 } from '@angular/core';
+import { CarouselModule} from 'ngx-bootstrap/carousel';
+import {CollapseModule} from 'ngx-bootstrap/collapse'
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export const routes: Routes = [
     {path:'home', component: HomeComponent},
@@ -10,4 +17,15 @@ export const routes: Routes = [
     {path:'resume', component: ResumeComponent},
     {path:'contact', component: ContactComponent},
     {path: '**' , component: HomeComponent, pathMatch: 'full',}
+];
+export const AppImports = [
+    // Import modules here
+    BrowserModule,
+    BrowserAnimationsModule,
+    ModalModule.forRoot(), // Example of importing module with forRoot()
+    RendererFactory2,
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    FormsModule,
+    
 ];
