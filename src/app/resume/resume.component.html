@@ -1,1 +1,207 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen" >
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Software Related Work Experience</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                <h2 class="mb-0">Software Engineer/Architect</h2>
+                <h3 class="text-primary">Freelance/Private Clients</h3>
+                <ul>
+                    <li>Undertook various freelance projects, collaborating with clients to understand requirements and deliver tailored software solutions.</li>
+                    <li>Demonstrated versatility by working on projects spanning X-platform mobile app and web development using multiple tech stacks,
+                        including C#/.NET, MVC, and MEAN.</li>
+                    <li>Successfully managed project timelines, ensuring timely delivery and client satisfaction for 9 separate projects mostly related to e-commerce and inventory control.</li>
+                    <li>Implemented best practices in coding and provided documentation for easy maintenance and future updates.</li>
+                </ul>
+            </div>
+                <div style="text-align: left;">
+                <h2 class="mb-0">Software Engineering Co-op</h2>
+                <h3 class="text-primary">GE Appliances, A Haier Company - Emerging Tech and Innovations</h3>
+                <ul>
+                    <li>Leveraged skills in C#/.NET, C/C++, Python and other tech stacks to actively create and deliver novel functional prototypes related to
+                        appliances and demonstrate them periodically to C-Suite executives and product line managers.</li>
+                    <li>Collaborated with electrical and mechanical engineers within GE Appliances to acquire needed hardware and electronics knowledge
+                        to perfect prototypes and insure complete functionality.</li>
+                    <li>Successfully translated 4 novel ideas from scratch into functional features to be introduced within the GE Appliances product line,
+                            and was awarded utility patents as the main inventor.</li>
+                    <li>Gained AI and machine learning exposure by learning data collection and how to model and train data for predictions using
+                        supervised, unsupervised and ensemble learning algorithms.</li>
+                </ul>
+            </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isManagementExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Management and Sales Work Experience</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isManagementExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isManagementExperienceOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                <h2 class="mb-0">Retail Sales Expert</h2>
+                <h3 class="text-primary">Charter Communications, INC</h3>
+                <ul>
+                    <li>Responsible for promoting and selling mostly residential internet, cable, home-phone and mobile services in a retail setting
+                        leveraging knowledge in sales and Oracle Xstore POS system.</li>
+                    <li>Consistent #1 performer on the SE Division power ranker which ranks over 400 retail sales specialists in terms of sales yields and
+                        target attainments, with 18 times ranking #1 nationwide.</li>
+                    <li>Contributed immensely along with the rest of the team in Evansville, IN to lift the store’s monthly ranking to being a consistent top 3
+                        nationwide, earning over $150,000 in total commissions.</li>
+                    <li>Numerous awards and certifications including: Spectrum Elite Sales Club 2021 and 2022, Apple Champion - Apple Excellence
+                        Program, and Spectrum Accelerate Program, Expert.</li>
+                </ul>
+            </div>
+                <div style="text-align: left;">
+                <h2 class="mb-0">District Sales Management</h2>
+                <h3 class="text-primary">Metro By T-Mobile</h3>
+                <ul>
+                    <li>Provided leadership and directed all operations within a franchise of six stores, ensuring compliance with corporate policies and
+                        procedures and attainment of company targets.</li>
+                    <li>Provided continuous coaching and mentoring to all levels of staff, including sales associates and store managers in effective selling
+                        and sales maximization, A-Z Oracle XStore POS System usage and error handling, inventory control, merchandizing techniques and
+                        customer service protocols.</li>
+                    <li>Consistently surpassed corporate monthly sales objectives and KPI's for all six locations with an average of 135% increase in net profit
+                        during my stint and recognition as some of the top performing doors in the Mid-Atlantic\ Great Lakes region.</li>
+                    <li>Actively ensured all locations and the warehouse were well stocked, while enforcing a loss prevention plan for all inventory in the
+                        stores and the warehouse.</li>
+                </ul>
+            </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                <h2 class="mb-0">Bachelor's of Science in Computer Science</h2>
+                <h3 class="text-primary">University of Evansville</h3>
+                <ul>
+                    <li>Graduated from the University of Evansville in December 2021</li>
+                    <li>GPA: 3.45</li>
+                    <li>Dean's list multiple terms: Fall 2015, Spring 2016, Spring 2017, Fall 2019</li>
+                </ul>
+            </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications and Awards</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h3>Design and Utility Patents</h3>
+                    <ul>
+                        <li>Automatic tea dispensers for personalized tea based on body vital signs:</li>
+                        <ul>
+                            <li>Awarded on 12/5/2020.</li>
+                            <li>Docket #: 502830US01/HUSA-1327.</li>
+                        </ul>
+                        <li>Knife Station with Speech Recognition</li>
+                        <ul>
+                            <li>Awarded on 9/10/2020.</li>
+                            <li>Docket No. 501865US01/HUSA-1119.</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                <h3>Microsoft Azure Data Fundementals</h3>
+                <ul>
+                    <li>Obtained in August 2020.</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h3>Apple Excellence Program- Apple Champion</h3>
+                <ul>
+                    <li>Obtained in March 2021.</li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <h3>Spectrum Elite Sales Club</h3>
+                <ul>
+                    <li>Awarded in 2021 and 2022.</li>
+                </ul>
+            </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Coding Languages</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>Python</li>
+                            <li>TypeScript</li>
+                            <li>Java</li>
+                            <li>C/C++</li>
+                            <li>Swift</li>
+                        </ul>
+    
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>ASP.NET</li>
+                            <li>Angular</li>
+                            <li>Xamarin</li>
+                            <li>React</li>
+                            <li>Node.JS</li>
+                            <li>Vue.JS</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>Source Control via git</li>
+                            <li>Objected Oriented Programming</li>
+                            <li>Agile Development</li>
+                            <li>Design Patterns: MVC, MVVM</li>
+                            <li>Databases: SQL, NoSQL</li>
+                            <li>API Development: Restful APIs, SOAP APIs</li>
+                            <li>Cloud Tech: Azure, AWS</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Problem Solving</li>
+                            <li>Relationship Building</li>
+                            <li>Time Management</li>
+                            <li>Strategic Planning</li>
+                            <li>Effective Communication</li>
+                            <li>Negotiation Skills</li>
+                            <li>Product Knowledge</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+    
+</div>

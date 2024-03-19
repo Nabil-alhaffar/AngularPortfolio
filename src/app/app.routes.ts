@@ -10,6 +10,7 @@ import {CollapseModule} from 'ngx-bootstrap/collapse'
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AccordionModule} from 'ngx-bootstrap/accordion';
 
 export const routes: Routes = [
     {path:'home', component: HomeComponent},
@@ -26,6 +27,6 @@ export const AppImports = [
     CollapseModule.forRoot(),
     FormsModule,
     CommonModule,
-    
+    AccordionModule.forRoot(),
     
 ];
