@@ -3,9 +3,9 @@
         <!-- About Me -->
         <div class="col-lg shadow border m-1">
             <div class="text-center">
-                <h2>About Me</h2>
-                <img src="../../assets/portfolioPic.png" alt="profile picture" width="256" height="256" class="rounded-circle">
-                <p>Dual-competent self-motivated professional excelling in both full-stack software development and sales, bringing a unique
+                <h1 style="margin-bottom: 30px;margin-top: 30px; color: #06223f;"> Professional Summary <img class="rounded-circle" height="35" width="35" src="../../assets/professional-summary.png" alt="Summary icon"></h1>
+                <img src="../../assets/portfolioPic.png" alt="profile picture" width="320" height="320" class="rounded-circle">
+                <p style="color: #06223f;">Dual-competent self-motivated professional excelling in both full-stack software development and sales, bringing a unique
                     blend of technical prowess and sales acumen. With 4 years of experience and a solid background in software engineering and
                     programming, I specialize in crafting scalable solutions for mobile, web, desktop, and embedded systems, as well as delivering clean
                     code that adheres to coding principles. In parallel, boasting 8 years in sales experience, I am a top-ranked sales professional with proven
@@ -17,20 +17,23 @@
         <div class="col-lg shadow border m-1">
 
             <div class="text-center">
-                <h2>Highlighted Project</h2>
-                <h4>{{featuredProject.name}}</h4>
+                <h1 style="margin-bottom: 30px;margin-top: 30px; color: #06223f;;">Highlighted Project <img class="rounded-circle" height="35" width="35" src="../../assets/featured-project.png" alt="project icon"></h1>
+                <h4 style="margin-bottom: 30px; color :#1b507f ; "> <u style="text-underline-offset: 10px;">{{featuredProject.name}}</u></h4>
             </div>
             <carousel>
                 <div *ngFor="let picture of featuredProject.pictures">
-                    <slide><img src="{{picture}}" alt="slide" style="display: block;width: 100%;"></slide>
+                    <slide><img src="{{picture}}" alt="slide" style="display: block;width: 100%; max-height: 400px;"></slide>
         
                 </div>
                
             </carousel>
-            <p class="mt-2">{{featuredProject.summary}}</p>
-            <p>Visit the Portfolio section to learn more!</p>
+            <p style="color: #06223f;" class="mt-2" >{{featuredProject.summary}}</p>
+            <p style="color: #06223f;">Visit the Portfolio section to learn more!</p>
             
         </div>
+        <!-- <div class="row-lg shadow border m-1" style="height: 200px;">
+            <h2 style="text-align: center;">hire me!</h2>
+        </div> -->
     </div>
 </div>
     

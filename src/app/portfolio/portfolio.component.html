@@ -1,7 +1,7 @@
 <div class="container">
     <div class="mb-2">
         <div>
-            <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">Filter</button>
+            <button style="background-color: white; color: #06223f ; border-color: #06223f;" class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">Filter</button>
             <button class="btn btn-outline-secondary mb-2" (click)="ResetFilters()" [hidden]="!filtering">Reset</button>
         </div>
         <div [collapse]="isCollapsed " [isAnimated]="true">

@@ -27,6 +27,7 @@
 
 .nav-item {
     margin-right: 10px;
+    color: #06223f;
     
 }
 ul {
@@ -45,5 +46,6 @@ ul {
 
 .text-secondary {
     list-style: none;
-    color: #6c757d;
+    color: #06223f;
+    /* color: #6c757d; */
 }
