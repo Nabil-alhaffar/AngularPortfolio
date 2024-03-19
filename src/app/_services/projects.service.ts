@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../_models/Projects';
 import { Tag } from '../_models/Tag';
+import { filter } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +30,22 @@ export class ProjectsService {
 
     }
     return project;
+  }
+  GetProjectsByFilter(filterTags: Tag[]){
+   
+    let filteredProjects: Project[]=[];
+    this.projects.forEach(function(project){
+      let foundAll = true;
+      filterTags.forEach(function(filterTag){
+        if(project.tags.includes(filterTag)== false){
+          foundAll = false;
+        }
+      });
+      if (foundAll){
+        filteredProjects.push(project);
+      }
+    });
+    return filteredProjects;
+
   }
 }

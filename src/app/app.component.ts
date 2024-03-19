@@ -9,12 +9,17 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CommonEngine } from '@angular/ssr';
+import { CommonModule } from '@angular/common';
+import { provideAnimations } from '@angular/platform-browser/animations';
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeaderComponent, NavComponent,ModalModule, CollapseModule, FormsModule]
+    imports: [RouterOutlet, HeaderComponent, NavComponent,ModalModule, CollapseModule, FormsModule, CommonModule],
+    providers:[]
 })
 export class AppComponent {
   title = 'AngularPortfolio';

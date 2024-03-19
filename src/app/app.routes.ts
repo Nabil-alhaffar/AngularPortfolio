@@ -8,7 +8,7 @@ import { NgModule, RendererFactory2 } from '@angular/core';
 import { CarouselModule} from 'ngx-bootstrap/carousel';
 import {CollapseModule} from 'ngx-bootstrap/collapse'
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export const routes: Routes = [
@@ -20,12 +20,12 @@ export const routes: Routes = [
 ];
 export const AppImports = [
     // Import modules here
-    BrowserModule,
-    BrowserAnimationsModule,
     ModalModule.forRoot(), // Example of importing module with forRoot()
     RendererFactory2,
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     FormsModule,
+    CommonModule,
+    
     
 ];

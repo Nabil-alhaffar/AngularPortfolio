@@ -8,6 +8,7 @@ import { RendererFactory2 } from '@angular/core';
 import { renderModule } from '@angular/platform-server';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
 import { checkMargins } from 'ngx-bootstrap/positioning';
+
 @Component({
   selector: 'app-project-card',
   standalone: true,
