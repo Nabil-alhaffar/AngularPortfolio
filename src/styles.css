@@ -6,10 +6,21 @@
 .tag {
     padding: 0 20 px;
     height: 30px;
-    width: fit-content;
+    width: 80px;
     font-size: 14px;
     line-height: 30px;
     border-radius: 25px;
     background-color: blue;
     color: white;
+}
+
+.custom-heading{
+    color: #06223f;
+}
+.tert{
+    color: #174266;
+
+}
+.sub{
+    color: #376489;
 }

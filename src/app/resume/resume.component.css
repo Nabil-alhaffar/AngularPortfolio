@@ -5,3 +5,10 @@ accordion-group::ng-deep .card-header{
     /* background-color: #007bff; */
     background-color: #06223f;
 }
+.custom-heading{
+    color: #06223f;
+}
+.sub{
+    color: #174266;
+
+}
