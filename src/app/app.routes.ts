@@ -13,11 +13,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {AccordionModule} from 'ngx-bootstrap/accordion';
 
 export const routes: Routes = [
+    {path: '', component: HomeComponent},
     {path:'home', component: HomeComponent},
     {path:'portfolio', component: PortfolioComponent},
     {path:'resume', component: ResumeComponent},
     {path:'contact', component: ContactComponent},
-    {path: '**' , component: HomeComponent, pathMatch: 'full',}
+    {path: '**' , component: HomeComponent, pathMatch: 'full',},
+    { path: '**', redirectTo: '' }
 ];
 export const AppImports = [
     // Import modules here
