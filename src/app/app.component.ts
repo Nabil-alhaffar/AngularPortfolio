@@ -13,6 +13,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonEngine } from '@angular/ssr';
 import { CommonModule } from '@angular/common';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -23,4 +24,20 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 })
 export class AppComponent {
   title = 'AngularPortfolio';
+  public sendEmail(e: Event) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_kr2tbsb', 'template_lz3jh1d', e.target as HTMLFormElement, {
+        publicKey: 'F71zpKqApi0Izm3eQ',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error: any) => {
+          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+        },
+      );
+  }
 }
