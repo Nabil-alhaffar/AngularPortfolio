@@ -4,3 +4,10 @@ h5.card-title{
 p.card-text{
     color: #174266;
 }
+.card{
+    background-color: #eef3f8;
+    opacity: .85;
+    :hover{
+        background-color: #7494af;
+    }
+}

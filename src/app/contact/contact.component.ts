@@ -38,7 +38,7 @@ export class ContactComponent {
         alert("Message sent successfully!")
       })
       .catch(error => {
-        alert("error! Please try again.")
+        alert("Error! Please try again.")
       });
 
    
